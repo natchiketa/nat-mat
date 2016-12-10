@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/natchiketa/nat-mat#readme",
   "dependencies": {
+    "animate-scss": "^3.2.1",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
     "roboto-fontface": "^0.6.0"
