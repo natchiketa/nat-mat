@@ -4,11 +4,11 @@
 @import "variables";
 
 // Font
-@import "bower_components/roboto-fontface/css/roboto-fontface.scss";
-@import "bower_components/font-awesome/scss/font-awesome";
+@import "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface.scss";
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // Bootstrap
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bootstrap-overrides";
 
 // materialism theme
