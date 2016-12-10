@@ -1,7 +1,7 @@
 .jvectormap-container {
   .jvectormap-zoomin, .jvectormap-zoomout {
-    @extend .z-depth-1;
-    @extend .theme-secondary;
+    @extend .z-depth-1 !optional;
+    @extend .theme-secondary !optional;
 
     height: 50px;
     width: 50px;

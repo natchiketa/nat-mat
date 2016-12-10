@@ -7,7 +7,7 @@
   background-color: $card-bg-color;
   @include box-sizing(border-box);
   border-radius: 2px;
-  @extend .z-depth-0;
+  @extend .z-depth-0 !optional;
   margin-bottom:30px;
 
   &.card-flip {
@@ -47,11 +47,11 @@
       padding: 10px 15px;
 
       &.active {
-        @extend .theme-secondary-bg;
+        @extend .theme-secondary-bg !optional;
       }
 
       &:hover {
-        @extend .theme-secondary-bg-lighten-5;
+        @extend .theme-secondary-bg-lighten-5 !optional;
       }
 
       img {

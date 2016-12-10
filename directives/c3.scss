@@ -3,7 +3,7 @@
 .c3 {
   .c3-tooltip {
     th {
-      @extend .theme-secondary-bg;
+      @extend .theme-secondary-bg !optional;
     }
     tr {
       border: none;

@@ -87,7 +87,7 @@ legend {
 }
 
 .focussed .ta-bind {
-  @extend .theme-box-inset;
+  @extend .theme-box-inset !optional;
 }
 
 .ta-bind {

@@ -75,7 +75,7 @@ $theme-secondary-colors: (
     }
 
     .user-logged-in a {
-      @extend .theme-secondary-text-lighten-3;
+      @extend .theme-secondary-text-lighten-3 !optional;
     }
   }
 }

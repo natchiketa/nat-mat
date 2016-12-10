@@ -1,11 +1,11 @@
 
 // Links
 a {
-  @extend .theme-secondary-text;
+  @extend .theme-secondary-text !optional;
 
   &:hover,
   &:focus {
-    @extend .theme-secondary-text-lighten-3;
+    @extend .theme-secondary-text-lighten-3 !optional;
   }
 }
 
@@ -148,7 +148,7 @@ input[type=number],
   font-size: 16px;
 
   &:focus {
-    @extend .theme-box-inset;
+    @extend .theme-box-inset !optional;
   }
 
   &[disabled],
@@ -200,7 +200,7 @@ select.form-control {
   }
 
   &:focus {
-    @extend .theme-box-inset;
+    @extend .theme-box-inset !optional;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEUhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISF8S9ewAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
   }
 
@@ -257,7 +257,7 @@ input[type="radio"],
     left: 0;
     top: 0;
     @include scale(0);
-    @extend .theme-bg;
+    @extend .theme-bg !optional;
   }
 
   &:after {
@@ -273,7 +273,7 @@ input[type="radio"],
   }
 
   &:checked:after {
-    @extend .theme-border;
+    @extend .theme-border !optional;
   }
 
   &:disabled:after,
@@ -333,8 +333,8 @@ input[type="checkbox"],
 
   &:checked:after {
 
-    @extend .theme-bg;
-    @extend .theme-border;
+    @extend .theme-bg !optional;
+    @extend .theme-border !optional;
   }
 
   &:disabled:after {
@@ -431,20 +431,20 @@ input[type="checkbox"],
 
     &:hover {
       background-color: transparent;
-      @extend .theme-box-inset;
-      @extend .theme-text;
+      @extend .theme-box-inset !optional;
+      @extend .theme-text !optional;
     }
   }
 
   & > li.active > a,
   & > li.active > a:focus {
     border: none;
-    @extend .theme-box-inset;
-    @extend .theme-text;
+    @extend .theme-box-inset !optional;
+    @extend .theme-text !optional;
 
     &:hover {
       border: none;
-      @extend .theme-text;
+      @extend .theme-text !optional;
     }
   }
 
@@ -639,12 +639,12 @@ input[type="checkbox"],
 
 .well {
   border-radius: 0;
-  @extend .z-depth-0;
+  @extend .z-depth-0 !optional;
 }
 
 .panel {
   border: none;
-  @extend .z-depth-0;
+  @extend .z-depth-0 !optional;
 
   &-title {
     line-height: 20px;

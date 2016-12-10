@@ -60,7 +60,7 @@ aside.sidebar {
     font-size: 22px;
 
     @include transition(transform 0.3s ease-in-out);
-    @extend .theme-text-lighten-1;
+    @extend .theme-text-lighten-1 !optional;
   }
   a.collapsible-header.active:after {
     @include rotate(180deg);

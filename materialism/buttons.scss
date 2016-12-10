@@ -20,17 +20,17 @@
 
   &-link {
     $bg: color('grey', 'lighten-3');
-    @extend .theme-text;
+    @extend .theme-text !optional;
     @include box-shadow(none);
 
     &:focus {
       text-decoration: none;
-      @extend .theme-text-darken-1;
+      @extend .theme-text-darken-1 !optional;
     }
 
     &:hover {
       @include box-shadow(none);
-      @extend .theme-text-darken-1;
+      @extend .theme-text-darken-1 !optional;
       text-decoration: none;
       background-color: $bg;
     }
@@ -213,18 +213,18 @@ $btn-round-size-xs:  ceil(($btn-round-size-base * 0.65));
 }
 
 .btn-primary {
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
 
   &:hover {
-    @extend .theme-bg-darken-1;
+    @extend .theme-bg-darken-1 !optional;
   }
   &:active {
-    @extend .theme-bg;
+    @extend .theme-bg !optional;
   }
   &:focus {
-    @extend .theme-bg-accent-4;
+    @extend .theme-bg-accent-4 !optional;
   }
   &.disabled {
-    @extend .theme-bg-lighten-3;
+    @extend .theme-bg-lighten-3 !optional;
   }
 }

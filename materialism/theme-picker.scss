@@ -20,7 +20,7 @@ $theme-secondary-color-variations: (
     position:relative;
 
     &:hover {
-      @extend .z-depth-0;
+      @extend .z-depth-0 !optional;
     }
 
     .icon {

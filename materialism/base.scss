@@ -44,7 +44,7 @@ h5 {
 }
 
 #loading-bar .bar {
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
 }
 
 .lead {
@@ -109,7 +109,7 @@ body {
   .foot1, .foot3 {
     @include skew(-20deg, 0deg);
     z-index: 1;
-    @extend .theme-bg-darken-1;
+    @extend .theme-bg-darken-1 !optional;
   }
 
   .foot3 {
@@ -120,7 +120,7 @@ body {
     left: 8px;
     @include skew(20deg, 0deg);
     z-index: 0;
-    @extend .theme-bg;
+    @extend .theme-bg !optional;
   }
 
   .foot4 {

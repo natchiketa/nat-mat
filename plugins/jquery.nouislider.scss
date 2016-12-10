@@ -57,7 +57,7 @@
  */
 .noUi-base {
   @include translate3d(0,0,0);
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
 }
 
 .noUi-range {
@@ -66,7 +66,7 @@
   }
 
   .noUi-origin:first-child {
-    @extend .theme-bg;
+    @extend .theme-bg !optional;
   }
 }
 
@@ -125,7 +125,7 @@
 .noUi-handle {
   border-radius: 50%;
   cursor: default;
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
   transition: all .2s ease-out;
 }
 .noUi-active {
@@ -137,7 +137,7 @@
   position: absolute;
   height: 30px;
   width: 30px;
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
   border-radius:50%;
   opacity:0;
   left: -7px;

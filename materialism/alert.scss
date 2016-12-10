@@ -2,9 +2,9 @@
 
   &.alert-theme {
     max-width: 440px;
-    @extend .z-depth-2;
+    @extend .z-depth-2 !optional;
 
-    @extend .theme-secondary;
+    @extend .theme-secondary !optional;
     left: auto;
   }
 

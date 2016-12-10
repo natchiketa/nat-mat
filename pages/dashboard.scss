@@ -1,7 +1,7 @@
 .dashboard {
 
   .table-dashboard-widget-1 td:first-child {
-    @extend .theme-text;
+    @extend .theme-text !optional;
   }
 
   .table-dashboard-widget-1 td:last-child {

@@ -14,10 +14,10 @@
   margin:0px;
 }
 .switch label input[type=checkbox]:checked + .lever {
-  @extend .theme-bg-lighten-3;
+  @extend .theme-bg-lighten-3 !optional;
 }
 .switch label input[type=checkbox]:checked + .lever:after {
-  @extend .theme-bg;
+  @extend .theme-bg !optional;
 }
 .switch label .lever {
   content: "";
